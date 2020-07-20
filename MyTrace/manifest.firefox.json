@@ -11,7 +11,7 @@
   	"homepage_url":"https://absolutedouble.co.uk/trace/",
 	"options_ui": {
 	  	"page":"html/options.html",
-	  	"chrome_style":false,
+	  	"chrome_style":true,
 	  	"open_in_tab":true
 	},
   	"incognito":"spanning",
@@ -31,7 +31,7 @@
 		},
 		"default_title": "Trace | Tracking Protection",
 		"default_popup": "html/report.html",
-		"browser_style": false
+		"browser_style": true
 	},
 	"commands": {
 		"ToggleTraceWeb":{
@@ -98,14 +98,14 @@
 			"all_frames":true,
 			"js":["js/contentscript/page.js"],
 			"matches":["http://*/*","https://*/*"],
-		  	"match_about_blank":false,
+		  	"match_about_blank":true,
 			"run_at":"document_start"
 		},
 	  	{
 			"all_frames":true,
 			"js":["js/contentscript/loaded.js"],
 			"matches":["http://*/*","https://*/*"],
-		  	"match_about_blank":false,
+		  	"match_about_blank":true,
 			"run_at":"document_end"
 		}
 	],
